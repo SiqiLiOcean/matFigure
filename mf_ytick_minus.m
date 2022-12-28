@@ -11,10 +11,10 @@
 % Updates:
 %
 %==========================================================================
-function mf_ytick_minus
+function mf_ytick_minus(ax)
 
-ytick = get(gca, 'ytick');
-yticklabel = get(gca, 'yticklabel');
+ytick = get(ax, 'ytick');
+yticklabel = get(ax, 'yticklabel');
 
 for i = 1 : length(yticklabel)
     
@@ -33,4 +33,4 @@ for i = 1 : length(yticklabel)
     end
 end
 
-set(gca, 'yticklabel', yticklabel);
+set(ax, 'yticklabel', yticklabel);
