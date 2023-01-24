@@ -11,9 +11,9 @@
 % Updates:
 %
 %==========================================================================
-function mf_ytick_scale(scale)
+function mf_ytick_scale(h, scale)
 
-ytick = get(gca, 'ytick');
+ytick = get(h, 'ytick');
 % xticklabel = get(gca, 'xticklabel');
 
 for i = 1 : length(ytick)
@@ -22,5 +22,5 @@ for i = 1 : length(ytick)
     
 end
 
-set(gca, 'yticklabel', yticklabel);
+set(h, 'yticklabel', yticklabel);
 
