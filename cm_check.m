@@ -65,8 +65,7 @@ if ~isempty(varargin)
 %         MAT = [out_path(1:k(end)) 'cm/' OUT '.mat'];
 %     end
 
-%     exportgraphics(gcf, FIGURE,'Resolution',300)
-    mf_save(FIGURE);
+%     mf_save(FIGURE);
     save(MAT, 'cm');
 end
 
