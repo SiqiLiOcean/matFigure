@@ -44,3 +44,5 @@ fclose(fid);
 if max(cm) <= 1.01
     cm = round(cm*255);
 end
+
+cm = uint8(cm);

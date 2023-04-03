@@ -13,7 +13,7 @@
 %==========================================================================
 function h = mf_box(ax, varargin)
 
-varargin = read_varargin(varargin, {'Linewidth'}, {.8});
+varargin = read_varargin(varargin, {'Linewidth'}, {.6});
 
 if isempty(varargin)
     xlims = xlim(ax);

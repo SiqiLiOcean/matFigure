@@ -8,14 +8,15 @@ varargin = read_varargin(varargin, {'Ncolor'}, {[]});
 varargin = read_varargin2(varargin, {'Flip'});
 
 
-%     cm_path = which('cm_load');
-%     k = strfind(cm_path, ("/"|"\"));
-%     MAT = [cm_path(1:k(end)) 'cm\' lower(cm_name) '.mat'];
+if endsWith(cm_name, '.rgb')
+    cm = cm_read_ncl(cm_name);
+else
     cm_path = fundir('cm_load');
     MAT = [cm_path 'cm/' lower(cm_name) '.mat'];
 
     data = load(MAT);
     cm = data.cm;
+end
     
     n = size(cm,1);
     Lims = round(Lims*(n-1)+1);
