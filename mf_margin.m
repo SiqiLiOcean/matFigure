@@ -16,6 +16,7 @@
 function mf_margin(fin, fout, varargin)
 
 read_varargin2(varargin, {'All', 'Horizontal', 'Vertical'});
+
 All_flag = All;
 Horizontal_flag = Horizontal;
 Vertical_flag = Vertical;
