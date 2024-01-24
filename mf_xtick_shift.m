@@ -11,9 +11,9 @@
 % Updates:
 %
 %==========================================================================
-function mf_xtick_shift(shift)
+function mf_xtick_shift(gh, shift)
 
-xtick = get(gca, 'xtick');
+xtick = get(gh, 'xtick');
 % xticklabel = get(gca, 'xticklabel');
 
 for i = 1 : length(xtick)
@@ -23,5 +23,5 @@ for i = 1 : length(xtick)
 end
 
 
-set(gca, 'xticklabel', xticklabel);
+set(gh, 'xticklabel', xticklabel);
 
