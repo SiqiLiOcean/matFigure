@@ -11,9 +11,9 @@
 % Updates:
 %
 %==========================================================================
-function mf_ytick_shift(shift)
+function mf_ytick_shift(gh, shift)
 
-ytick = get(gca, 'ytick');
+ytick = get(gh, 'ytick');
 % xticklabel = get(gca, 'xticklabel');
 
 for i = 1 : length(ytick)
@@ -22,5 +22,5 @@ for i = 1 : length(ytick)
     
 end
 
-set(gca, 'yticklabel', yticklabel);
+set(gh, 'yticklabel', yticklabel);
 
